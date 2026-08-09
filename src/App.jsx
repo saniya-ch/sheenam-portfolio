@@ -1,6 +1,4 @@
-import Cursor from "./components/Cursor";
-import { useState, useEffect } from "react";
-import { AnimatePresence } from "framer-motion";
+import { useEffect, useState } from "react";
 
 import Loader from "./components/Loader";
 
@@ -23,35 +21,21 @@ function App() {
 
     return () => clearTimeout(timer);
   }, []);
-  
+
+  if (loading) {
+    return <Loader />;
+  }
 
   return (
     <>
-      <AnimatePresence>
-        {loading && <Loader />}
-      </AnimatePresence>
-      <Cursor />
-
-      {!loading && (
-        
-        <>
-          <Navbar />
-
-          <Hero />
-
-          <About />
-
-          <Work />
-
-          <Experience />
-
-          <Toolkit />
-
-          <Contact />
-
-          <Footer />
-        </>
-      )}
+      <Navbar />
+      <Hero />
+      <About />
+      <Work />
+      <Experience />
+      <Toolkit />
+      <Contact />
+      <Footer />
     </>
   );
 }
