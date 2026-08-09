@@ -11,7 +11,7 @@ import v8 from "../assets/videos/N5.mp4";
 import v9 from "../assets/videos/S1.mp4";
 import h1 from "../assets/videos/H1.mp4";
 import h2 from "../assets/videos/H2.mp4";
-import h3 from "../assets/videos/H3.mp4";
+import h3 from "../assets/videos/h3.mp4";
 
 
 function Work() {
