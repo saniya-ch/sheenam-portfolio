@@ -45,7 +45,7 @@ function Work() {
     {
       title:
         "Website purchase- 2,460\nAmount Spent- 43,31,510\nROAS- 2.89",
-      category: "Product - Frido Ultimate Wedge Plus Cushion",
+      category: "Frido Ultimate Wedge Plus Cushion",
       video: v4,
       color: "bg-[#fde7cf]",
     },
@@ -61,7 +61,7 @@ function Work() {
     {
       title:
         "Website purchase- 185\nAmount Spent- 6,15,940\nROAS- 9.07",
-      category: "Product - Frido Transfer Lift",
+      category: "Frido Transfer Lift",
       video: v6,
       color: "bg-[#ffe0eb]",
     },
@@ -69,7 +69,7 @@ function Work() {
     {
       title:
         "Website purchase- 102\nAmount Spent- 1,49,897\nROAS- 2.88",
-      category: "Product - Frido Mattress Topper",
+      category: "Frido Mattress Topper",
       video: v8,
       color: "bg-[#dfe9ff]",
     },
@@ -77,7 +77,7 @@ function Work() {
     {
       title:
         "Website purchase- 185\nAmount Spent- 6,15,940\nROAS- 9.07",
-      category: "Product - Frido Transfer Lift",
+      category: "Frido Transfer Lift",
       video: v9,
       color: "bg-[#ffe0eb]",
     },
@@ -276,7 +276,7 @@ function Work() {
                     py-3
                     rounded-full
                     bg-gray-100
-                    text-lg
+                    text-2xl
                     font-bold
                     text-[#081a46]
                   "
@@ -286,9 +286,9 @@ function Work() {
 
                 <h3
                   className="
-                    text-xl
-                    md:text-2xl
-                    font-bold
+                    text-sm
+                    md:text-xl
+                    font-normal
                     mt-5
                     whitespace-pre-line
                     text-[#081a46]
@@ -462,8 +462,7 @@ function Work() {
                 </h2>
 
                 <p className="text-gray-600 leading-relaxed">
-                  A creative campaign designed to improve
-                  engagement, storytelling and brand performance.
+                 
                 </p>
               </div>
             </motion.div>

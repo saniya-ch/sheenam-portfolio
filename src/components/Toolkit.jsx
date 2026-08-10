@@ -16,13 +16,13 @@ function Toolkit() {
     "Market research",
     "Brand Positioning",
     "Storytelling",
-    
-    
+
+
   ];
 
   return (
     <section id="toolkit"
-    className="max-w-7xl mx-auto px-6 py-24">
+      className="max-w-7xl mx-auto px-6 py-24">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -34,7 +34,7 @@ function Toolkit() {
           Toolkit
         </p>
 
-        <h2 className="text-5xl md:text-6xl font-black mb-6">
+        <h2 className="text-4xl md:text-5xl font-black mb-6">
           Skills I bring to the table.
         </h2>
 
@@ -51,18 +51,21 @@ function Toolkit() {
             <span
               key={index}
               className="
-              px-6
-              py-4
-              rounded-full
-              bg-white
-              shadow-lg
-              text-lg
-              font-semibold
-              hover:-translate-y-1
-              hover:shadow-xl
-              transition
-              cursor-default
-            "
+  px-4
+  py-3
+  md:px-6
+  md:py-4
+  rounded-full
+  bg-white
+  shadow-lg
+  text-base
+  md:text-lg
+  font-semibold
+  hover:-translate-y-1
+  hover:shadow-xl
+  transition
+  cursor-default
+"
             >
               {skill}
             </span>

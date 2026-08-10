@@ -21,3 +21,6 @@ body {
 *{
     cursor:auto;
 }
+body {
+  zoom: 0.925;
+}

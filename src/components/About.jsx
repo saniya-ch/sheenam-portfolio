@@ -18,7 +18,7 @@ function About() {
 
         <h2
           className="
-          text-4xl
+          text-3xl
           md:text-5xl
           lg:text-6xl
           font-black
@@ -28,20 +28,6 @@ function About() {
         >
           The story behind the scroll-stoppers.
         </h2>
-
-        <div
-          className="
-          inline-block
-          px-8
-          py-4
-          rounded-full
-          bg-[#fde7cf]
-          font-semibold
-          mb-12
-          "
-        >
-          ✨ Storyteller-in-chief
-        </div>
 
         <div
           className="
@@ -87,8 +73,7 @@ function About() {
               max-w-xl
               "
             >
-              Performance Creative Strategist, Copywriter and Ads
-              director helping brands scale through storytelling, Ads and creative campaigns.
+              Hooks get my attention. Consumer psychology keeps me curious. ROAS keeps me accountable.<br /> I work across the whole creative mess like research,angles,scripts,campaigns,shoots and performance.<br /> From "Why would anyone care?"-- to "Okay,why did THAT work?"
             </p>
 
             <div className="grid gap-5">

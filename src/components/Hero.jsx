@@ -45,9 +45,9 @@ function Hero() {
 
             <h1
               className="
-  text-5xl
-  md:text-6xl
-  lg:text-7xl
+  text-4xl
+  md:text-5xl
+  lg:text-6xl
   font-black
   leading-[1.05]
   text-[#081a46]
@@ -58,15 +58,15 @@ function Hero() {
 
             <div className="flex flex-wrap gap-4 mt-10">
 
-              <span className="bg-[#fde7cf] px-6 py-3 rounded-full font-semibold">
+              <span className="bg-[#fde7cf] px-4 py-3 rounded-full font-semibold">
                 Performance Creative Strategist
               </span>
 
-              <span className="bg-[#dfe9ff] px-6 py-3 rounded-full font-semibold">
+              <span className="bg-[#dfe9ff] px-4 py-3 rounded-full font-semibold">
                 Ads Director
               </span>
 
-              <span className="bg-[#ffe0eb] px-6 py-3 rounded-full font-semibold">
+              <span className="bg-[#ffe0eb] px-4 py-3 rounded-full font-semibold">
                 Copywriter
               </span>
 
