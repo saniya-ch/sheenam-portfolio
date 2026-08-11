@@ -73,7 +73,7 @@ function About() {
               max-w-xl
               "
             >
-              Hooks get my attention. Consumer psychology keeps me curious. ROAS keeps me accountable.<br /> I work across the whole creative mess like research,angles,scripts,campaigns,shoots and performance.<br /> From "Why would anyone care?"-- to "Okay,why did THAT work?"
+              Little me manifested it way back in school that she was going to make ads someday...<br /> And well... here I am, doing exactly that.<br /> For the past 4 years , I've been creating ads with my whole heart from finding the right insight and writing the script to directing shoots, building campaigns and looking at the numbers to see what actually worked.
             </p>
 
             <div className="grid gap-5">

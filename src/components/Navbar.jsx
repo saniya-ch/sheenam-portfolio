@@ -1,3 +1,4 @@
+import { FaLinkedinIn } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
 
@@ -5,30 +6,30 @@ function Navbar() {
   const [open, setOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("hero");
   useEffect(() => {
-  const sections = document.querySelectorAll("section[id]");
+    const sections = document.querySelectorAll("section[id]");
 
-  const handleScroll = () => {
-    const scrollY = window.scrollY;
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
 
-    sections.forEach((section) => {
-      const sectionTop = section.offsetTop - 120;
-      const sectionHeight = section.offsetHeight;
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop - 120;
+        const sectionHeight = section.offsetHeight;
 
-      if (
-        scrollY >= sectionTop &&
-        scrollY < sectionTop + sectionHeight
-      ) {
-        setActiveSection(section.getAttribute("id"));
-      }
-    });
-  };
+        if (
+          scrollY >= sectionTop &&
+          scrollY < sectionTop + sectionHeight
+        ) {
+          setActiveSection(section.getAttribute("id"));
+        }
+      });
+    };
 
-  window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
-  handleScroll();
+    handleScroll();
 
-  return () => window.removeEventListener("scroll", handleScroll);
-}, []);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <header
@@ -79,7 +80,7 @@ function Navbar() {
             </h2>
 
             <p className="text-xs text-gray-500">
-               Performance Creative Strategist
+              Performance Creative Strategist
             </p>
           </div>
         </div>
@@ -87,7 +88,7 @@ function Navbar() {
         {/* Desktop Navigation */}
 
         <nav
-  className="
+          className="
   hidden
   md:flex
   items-center
@@ -95,62 +96,90 @@ function Navbar() {
   text-lg
   font-medium
   "
->
-  <a
-    href="#about"
-    className={`transition-all duration-300 ${
-      activeSection === "about"
-        ? "text-[#214BB8] font-bold"
-        : "text-[#081a46] hover:text-[#214BB8]"
-    }`}
-  >
-    About
-  </a>
+        >
+          <a
+            href="#about"
+            className={`transition-all duration-300 ${activeSection === "about"
+              ? "text-[#214BB8] font-bold"
+              : "text-[#081a46] hover:text-[#214BB8]"
+              }`}
+          >
+            About
+          </a>
 
-  <a
-    href="#work"
-    className={`transition-all duration-300 ${
-      activeSection === "work"
-        ? "text-[#214BB8] font-bold"
-        : "text-[#081a46] hover:text-[#214BB8]"
-    }`}
-  >
-    Work
-  </a>
+          <a
+            href="#work"
+            className={`transition-all duration-300 ${activeSection === "work"
+              ? "text-[#214BB8] font-bold"
+              : "text-[#081a46] hover:text-[#214BB8]"
+              }`}
+          >
+            Work
+          </a>
 
-  <a
-    href="#experience"
-    className={`transition-all duration-300 ${
-      activeSection === "experience"
-        ? "text-[#214BB8] font-bold"
-        : "text-[#081a46] hover:text-[#214BB8]"
-    }`}
-  >
-    Experience
-  </a>
+          <a
+            href="#experience"
+            className={`transition-all duration-300 ${activeSection === "experience"
+              ? "text-[#214BB8] font-bold"
+              : "text-[#081a46] hover:text-[#214BB8]"
+              }`}
+          >
+            Experience
+          </a>
 
-  <a
-    href="#toolkit"
-    className={`transition-all duration-300 ${
-      activeSection === "toolkit"
-        ? "text-[#214BB8] font-bold"
-        : "text-[#081a46] hover:text-[#214BB8]"
-    }`}
-  >
-    Toolkit
-  </a>
+          <a
+            href="#toolkit"
+            className={`transition-all duration-300 ${activeSection === "toolkit"
+              ? "text-[#214BB8] font-bold"
+              : "text-[#081a46] hover:text-[#214BB8]"
+              }`}
+          >
+            Toolkit
+          </a>
 
-  <a
-    href="#contact"
-    className={`transition-all duration-300 ${
-      activeSection === "contact"
-        ? "text-[#214BB8] font-bold"
-        : "text-[#081a46] hover:text-[#214BB8]"
-    }`}
-  >
-    Contact
-  </a>
-</nav>
+          <a
+            href="#contact"
+            className={`transition-all duration-300 ${activeSection === "contact"
+              ? "text-[#214BB8] font-bold"
+              : "text-[#081a46] hover:text-[#214BB8]"
+              }`}
+          >
+            Contact
+          </a>
+          <a
+            href="https://www.linkedin.com/in/sheenamsheikh001/" 
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            className="
+    flex
+    items-center
+    gap-2
+    text-[#081a46]
+    hover:text-[#214BB8]
+    transition
+    font-semibold
+  "
+          >
+            <span
+              className="
+      w-9
+      h-9
+      rounded-full
+      bg-[#0A66C2]
+      text-white
+      flex
+      items-center
+      justify-center
+    "
+            >
+              <FaLinkedinIn className="text-lg" />
+            </span>
+
+            <span>LinkedIn</span>
+          </a>
+          
+        </nav>
 
         {/* Mobile Menu Button */}
 
@@ -188,6 +217,7 @@ function Navbar() {
             <a href="#contact" onClick={() => setOpen(false)}>
               Contact
             </a>
+
 
             <a
               href="#contact"
